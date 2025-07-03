@@ -1834,7 +1834,7 @@ section {
   }
 
   /* From Uiverse.io by vinodjangid07 */ 
-.Btn {
+.hexastring-btn {
   width: 45px;
   height: 45px;
   display: flex;
@@ -1843,13 +1843,12 @@ section {
   border: none;
   background-color: transparent;
   position: relative;
-  /* overflow: hidden; */
   border-radius: 7px;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
-.svgContainer {
+.hexastring-icon {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1859,11 +1858,11 @@ section {
   backdrop-filter: blur(0px);
   letter-spacing: 0.8px;
   border-radius: 10px;
-  transition: all .3s;
+  transition: all 0.3s;
   border: 1px solid rgba(156, 156, 156, 0.466);
 }
 
-.BG {
+.hexastring-bg {
   position: absolute;
   content: "";
   width: 100%;
@@ -1872,18 +1871,17 @@ section {
   z-index: -1;
   border-radius: 10px;
   pointer-events: none;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
-.Btn:hover .BG {
+.hexastring-btn:hover .hexastring-bg {
   transform: rotate(35deg);
   transform-origin: bottom;
 }
 
-.Btn:hover .svgContainer {
+.hexastring-btn:hover .hexastring-icon {
   background-color: rgba(156, 156, 156, 0.466);
   backdrop-filter: blur(4px);
 }
 
-  
 }
