@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wagh Aditya Rajendra - Software & AI Enthusiast</title>
+    <meta name="description" content="Aspiring Software & AI Enthusiast specializing in AWS, Python, Java, and Generative AI. Portfolio showcasing premium projects and technical expertise.">
+    <meta name="keywords" content="software developer, AI engineer, AWS, Python, Java, portfolio, full-stack developer">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dragadi-resume.vercel.app/">
+    <meta property="og:title" content="Wagh Aditya Rajendra - Software & AI Enthusiast">
+    <meta property="og:description" content="Premium portfolio showcasing modern software development and AI projects">
+    <meta property="og:image" content="https://dragadi-resume.vercel.app/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://dragadi-resume.vercel.app/">
+    <meta property="twitter:title" content="Wagh Aditya Rajendra - Software & AI Enthusiast">
+    <meta property="twitter:description" content="Premium portfolio showcasing modern software development and AI projects">
+    <meta property="twitter:image" content="https://dragadi-resume.vercel.app/og-image.jpg">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Plus+Jakarta+Sans:wght@200..800&family=JetBrains+Mono:wght@400;500;600&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+    
+    <!-- Particle Canvas for Cursor Trail -->
+    <canvas id="particleCanvas"></canvas>
+    
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">AD</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link" data-section="hero">Home</a>
+                <a href="#about" class="nav-link" data-section="about">About</a>
+                <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                <a href="#certifications" class="nav-link" data-section="certifications">Certs</a>
+                <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Command Palette -->
+    <div class="command-palette" id="commandPalette">
+        <div class="command-palette-container">
+            <div class="command-input-container">
+                <span class="command-icon">⌘</span>
+                <input type="text" id="commandInput" placeholder="Type a command...">
+            </div>
+            <div class="command-results" id="commandResults"></div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-background">
+                <div class="cosmic-particles"></div>
+                <div class="gradient-orb gradient-orb-1"></div>
+                <div class="gradient-orb gradient-orb-2"></div>
+                <div class="gradient-orb gradient-orb-3"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="hero-intro">
+                    <h1 class="hero-name">
+                        <span class="name-part">DragAditya</span>
+                    </h1>
+                    <div class="hero-tagline">
+                        <span class="greeting" id="dynamicGreeting">Hey there! 👋</span>
+                        <div class="rotating-phrases">
+                            <span class="phrase active">I build innovative solutions.</span>
+                            <span class="phrase">I debug complex problems.</span>
+                            <span class="phrase">I automate workflows.</span>
+                            <span class="phrase">I craft AI experiences.</span>
+                            <span class="phrase">I architect cloud solutions.</span>
+                            <span class="phrase">I secure digital systems.</span>
+                            <span class="phrase">I optimize performance.</span>
+                            <span class="phrase">I innovate with Python.</span>
+                            <span class="phrase">I deploy with AWS.</span>
+                            <span class="phrase">I design seamless UX.</span>
+                        </div>
+                    </div>
+                    <p class="hero-description">
+                        Aspiring Software & AI Enthusiast crafting the future with code, 
+                        cloud architecture, and artificial intelligence.
+                    </p>
+                    <div class="hero-cta">
+                        <button class="cta-primary" data-magnetic>
+                            <span>View My Work</span>
+                            <div class="cta-bg"></div>
+                        </button>
+                        <button class="cta-secondary" data-magnetic>
+                            <span>Get In Touch</span>
+                            <div class="cta-bg"></div>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="floating-card">
+                        <div class="card-content">
+                            <div class="status-indicator">
+                                <div class="status-dot"></div>
+                                <span>Available for opportunities</span>
+                            </div>
+                            <div class="quick-stats">
+                                <div class="stat">
+                                    <span class="stat-value">50+</span>
+                                    <span class="stat-label">Projects</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">3</span>
+                                    <span class="stat-label">Years</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-value">8.93</span>
+                                    <span class="stat-label">CGPA</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="section-subtitle">Building the future, one line of code at a time</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="glass-card">
+                            <h3>Academic Software Developer</h3>
+                            <p>Currently pursuing Bachelor of Computer Applications at KBC North Maharashtra University with a stellar 8.93 CGPA. I'm passionate about creating innovative solutions that bridge the gap between complex technology and real-world applications.</p>
+                            
+                            <div class="about-highlights">
+                                <div class="highlight">
+                                    <div class="highlight-icon">🎓</div>
+                                    <div class="highlight-content">
+                                        <h4>Education Excellence</h4>
+                                        <p>Top performer with 8.93 CGPA in Computer Applications</p>
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <div class="highlight-icon">💼</div>
+                                    <div class="highlight-content">
+                                        <h4>Professional Experience</h4>
+                                        <p>3+ years developing enterprise solutions for academic institutions</p>
+                                    </div>
+                                </div>
+                                <div class="highlight">
+                                    <div class="highlight-icon">🌏</div>
+                                    <div class="highlight-content">
+                                        <h4>Location</h4>
+                                        <p>Saraf Bazar, India | Age: 21</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <h3>Technical Expertise</h3>
+                        <div class="skills-categories">
+                            <div class="skill-category">
+                                <h4>Programming</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Python</span>
+                                    <span class="skill-tag">Java</span>
+                                    <span class="skill-tag">C++</span>
+                                    <span class="skill-tag">JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Cloud & DevOps</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">AWS</span>
+                                    <span class="skill-tag">Solutions Architecture</span>
+                                    <span class="skill-tag">DevOps</span>
+                                    <span class="skill-tag">Git/GitHub</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Data & AI</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Generative AI</span>
+                                    <span class="skill-tag">Machine Learning</span>
+                                    <span class="skill-tag">SQL</span>
+                                    <span class="skill-tag">Supabase</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Security</h4>
+                                <div class="skill-tags">
+                                    <span class="skill-tag">Cybersecurity</span>
+                                    <span class="skill-tag">Network Security</span>
+                                    <span class="skill-tag">Ethical Hacking</span>
+                                    <span class="skill-tag">Vulnerability Scanning</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Showcasing innovation through code</p>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card" data-tilt>
+                        <div class="project-image">
+                            <div class="project-preview">
+                                <div class="code-preview">
+                                    <div class="code-line">
+                                        <span class="token keyword">const</span>
+                                        <span class="token variable">debugger</span>
+                                        <span class="token operator">=</span>
+                                        <span class="token function">new</span>
+                                        <span class="token class">AIDebugger</span><span class="token punctuation">();</span>
+                                    </div>
+                                    <div class="code-line">
+                                        <span class="token variable">debugger</span><span class="token punctuation">.</span><span class="token method">analyze</span><span class="token punctuation">(</span><span class="token string">code</span><span class="token punctuation">);</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>ALTER - AI Code Debugger</h3>
+                                <div class="project-status">
+                                    <span class="status-badge live">Live</span>
+                                </div>
+                            </div>
+                            <p>Web application powered by Google Gemini API for real-time code debugging and intelligent suggestions with secure authentication.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Gemini API</span>
+                                <span class="tech-tag">Clerk Auth</span>
+                                <span class="tech-tag">Dark UI</span>
+                                <span class="tech-tag">Real-time</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://projectdebugger.onrender.com" target="_blank" class="project-link live-link" data-magnetic>
+                                    <span>View Live</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                        <path d="M4.5 3C4.5 3.27614 4.72386 3.5 5 3.5H7.5V6C7.5 6.27614 7.72386 6.5 8 6.5C8.27614 6.5 8.5 6.27614 8.5 6V3C8.5 2.72386 8.27614 2.5 8 2.5H5C4.72386 2.5 4.5 2.72386 4.5 3Z" fill="currentColor"/>
+                                        <path d="M7.85355 3.14645C8.04882 3.34171 8.04882 3.65829 7.85355 3.85355L4.35355 7.35355C4.15829 7.54882 3.84171 7.54882 3.64645 7.35355C3.45118 7.15829 3.45118 6.84171 3.64645 6.64645L7.14645 3.14645C7.34171 2.95118 7.65829 2.95118 7.85355 3.14645Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                                <button class="project-link info-link" data-magnetic data-project="alter">
+                                    <span>Details</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-tilt>
+                        <div class="project-image">
+                            <div class="project-preview">
+                                <div class="terminal-preview">
+                                    <div class="terminal-header">
+                                        <div class="terminal-controls">
+                                            <span class="control red"></span>
+                                            <span class="control yellow"></span>
+                                            <span class="control green"></span>
+                                        </div>
+                                        <span class="terminal-title">dragx</span>
+                                    </div>
+                                    <div class="terminal-content">
+                                        <div class="terminal-line">
+                                            <span class="prompt">$</span>
+                                            <span class="command">npx dragadix init</span>
+                                        </div>
+                                        <div class="terminal-line">
+                                            <span class="output">✅ Project initialized</span>
+                                        </div>
+                                        <div class="terminal-line">
+                                            <span class="output">🚀 Ready to code!</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>DRAGX - CLI Terminal Tool</h3>
+                                <div class="project-status">
+                                    <span class="status-badge published">Published</span>
+                                </div>
+                            </div>
+                            <p>Smart CLI tool that automates Git operations, project setup, and file management, improving developer workflow efficiency by 15%.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">CLI</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">Git Automation</span>
+                                <span class="tech-tag">NPM</span>
+                            </div>
+                            <div class="project-links">
+                                <button class="project-link install-link" data-magnetic data-copy="npx dragadix">
+                                    <span>Copy Install</span>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                        <path d="M8 2H9C9.55228 2 10 2.44772 10 3V9C10 9.55228 9.55228 10 9 10H5C4.44772 10 4 9.55228 4 9V8" stroke="currentColor" stroke-width="1" fill="none"/>
+                                        <path d="M7 2H3C2.44772 2 2 2.44772 2 3V7C2 7.55228 2.44772 8 3 8H7C7.55228 8 8 7.55228 8 7V3C8 2.44772 7.55228 2 7 2Z" stroke="currentColor" stroke-width="1" fill="none"/>
+                                    </svg>
+                                </button>
+                                <button class="project-link info-link" data-magnetic data-project="dragx">
+                                    <span>Details</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications" id="certifications">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Certifications</h2>
+                    <p class="section-subtitle">Continuous learning and professional growth</p>
+                </div>
+                
+                <div class="certifications-grid">
+                    <div class="cert-card" data-tilt>
+                        <div class="cert-logo">
+                            <div class="aws-logo">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M7.2 14.4c.9-.3 1.8-.6 2.7-.9.9-.3 1.8-.6 2.7-.9.9-.3 1.8-.6 2.7-.9.9-.3 1.8-.6 2.7-.9" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M3 9c.9.3 1.8.6 2.7.9.9.3 1.8.6 2.7.9.9.3 1.8.6 2.7.9.9.3 1.8.6 2.7.9" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M3 15c.9.3 1.8.6 2.7.9.9.3 1.8.6 2.7.9.9.3 1.8.6 2.7.9.9.3 1.8.6 2.7.9" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cert-content">
+                            <h3>AWS Solutions Architecture</h3>
+                            <p class="cert-issuer">Amazon Web Services</p>
+                            <p class="cert-date">Issued June 2025</p>
+                            <div class="cert-badge">
+                                <span>Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card" data-tilt>
+                        <div class="cert-logo">
+                            <div class="tata-logo">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M9 9l6 6m0-6l-6 6" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cert-content">
+                            <h3>Cybersecurity Analyst Job Simulation</h3>
+                            <p class="cert-issuer">TATA Group (Forage)</p>
+                            <p class="cert-date">Issued June 2025</p>
+                            <div class="cert-badge">
+                                <span>Security</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cert-card" data-tilt>
+                        <div class="cert-logo">
+                            <div class="bcg-logo">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M12 7v10m-5-5h10" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="cert-content">
+                            <h3>Generative AI Job Simulation</h3>
+                            <p class="cert-issuer">BCG X</p>
+                            <p class="cert-date">Issued June 2025</p>
+                            <div class="cert-badge">
+                                <span>AI/ML</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="section-subtitle">Ready to build something amazing together?</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card" data-tilt>
+                            <h3>Get In Touch</h3>
+                            <p>I'm always open to discussing new opportunities, innovative projects, or just having a great conversation about technology.</p>
+                            
+                            <div class="contact-methods">
+                                <div class="contact-method">
+                                    <div class="contact-icon">📧</div>
+                                    <div class="contact-details">
+                                        <span class="contact-label">Email</span>
+                                        <button class="contact-value" data-copy="waghaditya312@gmail.com">
+                                            waghaditya312@gmail.com
+                                            <div class="copy-icon">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M10.5 2.5H12C12.8284 2.5 13.5 3.17157 13.5 4V11C13.5 11.8284 12.8284 12.5 12 12.5H7C6.17157 12.5 5.5 11.8284 5.5 11V10" stroke="currentColor" stroke-width="1" fill="none"/>
+                                                    <path d="M9.5 2.5H4C3.17157 2.5 2.5 3.17157 2.5 4V9C2.5 9.82843 3.17157 10.5 4 10.5H9.5C10.3284 10.5 11 9.82843 11 9V4C11 3.17157 10.3284 2.5 9.5 2.5Z" stroke="currentColor" stroke-width="1" fill="none"/>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="contact-icon">📞</div>
+                                    <div class="contact-details">
+                                        <span class="contact-label">Phone</span>
+                                        <button class="contact-value" data-copy="+91 8329177017">
+                                            +91 8329177017
+                                            <div class="copy-icon">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                                    <path d="M10.5 2.5H12C12.8284 2.5 13.5 3.17157 13.5 4V11C13.5 11.8284 12.8284 12.5 12 12.5H7C6.17157 12.5 5.5 11.8284 5.5 11V10" stroke="currentColor" stroke-width="1" fill="none"/>
+                                                    <path d="M9.5 2.5H4C3.17157 2.5 2.5 3.17157 2.5 4V9C2.5 9.82843 3.17157 10.5 4 10.5H9.5C10.3284 10.5 11 9.82843 11 9V4C11 3.17157 10.3284 2.5 9.5 2.5Z" stroke="currentColor" stroke-width="1" fill="none"/>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <div class="contact-method">
+                                    <div class="contact-icon">📍</div>
+                                    <div class="contact-details">
+                                        <span class="contact-label">Location</span>
+                                        <span class="contact-value">Saraf Bazar, India</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-links">
+                                <a href="https://github.com/dragaditya" target="_blank" class="social-link" data-magnetic>
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0012 2z" fill="currentColor"/>
+                                    </svg>
+                                    <span>GitHub</span>
+                                </a>
+                                <a href="https://linkedin.com/in/DragAdi" target="_blank" class="social-link" data-magnetic>
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z" fill="currentColor"/>
+                                    </svg>
+                                    <span>LinkedIn</span>
+                                </a>
+                                <a href="https://dragadi-resume.vercel.app" target="_blank" class="social-link" data-magnetic>
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    </svg>
+                                    <span>Portfolio</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <p>&copy; 2025 DragAditya. Crafted with passion and precision.</p>
+                </div>
+                <div class="footer-right">
+                    <div class="theme-toggle" id="themeToggle">
+                        <div class="toggle-track">
+                            <div class="toggle-thumb"></div>
+                        </div>
+                        <span class="toggle-label">Dark Mode</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Project Modals -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal" id="projectModal">
+            <button class="modal-close" id="modalClose">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+            <div class="modal-content" id="modalContent">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
