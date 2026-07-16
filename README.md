@@ -1,141 +1,193 @@
-🌐 Aditya Wagh — Developer Portfolio
+<div align="center">
 
-<div align="center">"Portfolio" (https://img.shields.io/badge/Portfolio-Live-success?style=for-the-badge)
-"Next.js" (https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)
-"React" (https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-"Tailwind CSS" (https://img.shields.io/badge/Tailwind_CSS-4-38BDF8?style=for-the-badge&logo=tailwind-css&logoColor=white)
-"License" (https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+# 🚀 Aditya Wagh Portfolio
 
-A modern, fast, and responsive portfolio showcasing my projects, skills, experience, and journey as a Software & AI Developer.
+### 💻 Software Developer • 🤖 AI Enthusiast • 🌐 Full Stack Developer
 
-</div>---
+<p>
+A modern, responsive, and high-performance portfolio showcasing my projects,
+technical skills, achievements, and journey as a developer.
+</p>
 
-✨ About
-
-This portfolio is designed to represent my work, technical skills, and passion for building impactful software.
-
-It serves as a central hub where recruiters, developers, and collaborators can explore my projects, learn about my background, and connect with me.
-
----
-
-🚀 Features
-
-- 🎨 Modern and minimal UI
-- 📱 Fully responsive design
-- ⚡ Lightning-fast performance
-- 🌙 Clean developer-focused interface
-- 💼 Projects showcase
-- 🛠 Skills section
-- 📄 Resume integration
-- 📬 Contact section
-- 🔍 SEO optimized
-- ♿ Accessible design
+<p>
+<a href="https://dragadi-resume.vercel.app">🌍 Live Demo</a> •
+<a href="https://github.com/DragAditya">GitHub</a> •
+<a href="https://linkedin.com/in/DragAdi">LinkedIn</a>
+</p>
 
 ---
 
-🛠 Tech Stack
+![Next.js](https://img.shields.io/badge/Next.js-Ready-000?style=for-the-badge&logo=next.js)
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38BDF8?style=for-the-badge&logo=tailwind-css)
+![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?style=for-the-badge&logo=vercel)
 
-Frontend
-
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
-
-Deployment
-
-- Vercel
-
-Development
-
-- Git
-- GitHub
-- VS Code
+</div>
 
 ---
 
-📂 Project Structure
+# ✨ About
 
-portfolio/
-├── app/
-├── components/
-├── public/
-├── styles/
-├── lib/
-├── hooks/
-├── assets/
+This repository contains the source code for my personal portfolio website.
+
+It highlights my:
+
+- 🚀 Featured Projects
+- 💼 Experience
+- 🛠 Technical Skills
+- 📜 Certifications
+- 🏆 Achievements
+- 📄 Resume
+- 📬 Contact Information
+
+---
+
+# 🛠 Tech Stack
+
+| Category | Technologies |
+|----------|--------------|
+| Framework | Next.js |
+| Language | TypeScript |
+| UI | React |
+| Styling | Tailwind CSS |
+| Deployment | Vercel |
+| Version Control | Git & GitHub |
+
+---
+
+# ⚡ Features
+
+- 🎨 Beautiful Modern UI
+- 🌙 Dark Theme
+- 📱 Fully Responsive
+- ⚡ Optimized Performance
+- 🧩 Reusable Components
+- 🔍 SEO Friendly
+- 📄 Resume Download
+- 📬 Contact Section
+- 🚀 Fast Loading
+- ♿ Accessible Design
+
+---
+
+# 📂 Project Structure
+
+```text
+portfolio
+│
+├── app
+├── components
+├── public
+├── styles
+├── lib
+├── hooks
+├── package.json
 └── README.md
+```
 
 ---
 
-⚙️ Getting Started
+# 🚀 Installation
 
 Clone the repository
 
+```bash
 git clone https://github.com/DragAditya/portfolio.git
+```
 
-Move into the project
+Move into the folder
 
+```bash
 cd portfolio
+```
 
 Install dependencies
 
+```bash
 npm install
+```
 
-Start the development server
+Run locally
 
+```bash
 npm run dev
+```
 
-Open:
+Open
 
+```text
 http://localhost:3000
+```
 
 ---
 
-📸 Preview
+# 📸 Preview
 
-«Add screenshots or GIFs here.»
+> Add screenshots inside:
 
-public/screenshots/home.png
-public/screenshots/projects.png
-public/screenshots/contact.png
+```text
+public/screenshots/
+```
 
----
+Example:
 
-📈 Performance Goals
+```markdown
+![Home](public/screenshots/home.png)
 
-- ⚡ Excellent Lighthouse score
-- 📱 Mobile-first design
-- 🔒 Secure and reliable
-- 🚀 Fast loading
-- ♿ Accessibility focused
+![Projects](public/screenshots/projects.png)
 
----
+![About](public/screenshots/about.png)
 
-🤝 Connect With Me
-
-- GitHub: https://github.com/DragAditya
-- LinkedIn: https://linkedin.com/in/DragAdi
-- Portfolio: https://dragadi-resume.vercel.app
+![Contact](public/screenshots/contact.png)
+```
 
 ---
 
-⭐ Support
+# 📈 Roadmap
 
-If you like this project, consider giving it a ⭐ Star on GitHub.
-
-It helps support the project and motivates future improvements.
+- [x] Portfolio Website
+- [x] Responsive Layout
+- [x] Project Showcase
+- [x] Resume
+- [ ] Blog
+- [ ] Dark/Light Toggle
+- [ ] Analytics
+- [ ] Multi-language Support
 
 ---
 
-📜 License
+# 🤝 Connect
 
-This project is licensed under the MIT License.
+🌍 Website  
+https://dragadi-resume.vercel.app
+
+💻 GitHub  
+https://github.com/DragAditya
+
+💼 LinkedIn  
+https://linkedin.com/in/DragAdi
 
 ---
 
-<div align="center">Thanks for visiting my portfolio ❤️
+# ⭐ Support
 
-Happy Coding! 🚀
+If you found this project useful,
+
+🌟 **Star this repository** and share it with others.
+
+---
+
+# 📄 License
+
+Licensed under the **MIT License**.
+
+---
+
+<div align="center">
+
+### 🚀 Thanks for visiting!
+
+**Made with ❤️ by Aditya Wagh**
 
 </div>
